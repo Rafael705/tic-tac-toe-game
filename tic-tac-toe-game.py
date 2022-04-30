@@ -16,8 +16,8 @@ def draw_piece(pos):
     if VEZ == 'JOGADOR2':
         pygame.draw.circle(tela, (0, 0, 255), pos, 50)
     else:
-        img = pygame.image.load('x.png').convert_alpha()
-        imgR = pygame.transform.scale(img, (100, 100))
+        imagem = pygame.image.load('x.png').convert_alpha()
+        imgR = pygame.transform.scale(imagem, (100, 100))
         tela.blit(imgR, (x - 50, y - 50))
 
 def test_position():
