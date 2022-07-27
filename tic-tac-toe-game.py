@@ -3,6 +3,7 @@ from pygame.draw import rect
 from pygame.locals import *
 from sys import exit
 
+global VEZ
 
 def desenhar_tabu():
     pygame.draw.line(tela, (255, 255, 255), (200, 0), (200, 600), 10)
@@ -11,7 +12,6 @@ def desenhar_tabu():
     pygame.draw.line(tela, (255, 255, 255), (0, 400), (600, 400), 10)
 
 def draw_piece(pos):
-    global VEZ
     x, y = pos
     if VEZ == 'JOGADOR2':
         pygame.draw.circle(tela, (0, 0, 255), pos, 50)
